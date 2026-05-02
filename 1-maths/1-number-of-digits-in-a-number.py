@@ -1,5 +1,7 @@
 # problem: given a number n find the number of digits in it 
 
+
+import math
 def numberOfDigits(n):
   if(-10 < n < 10):
     return 1
@@ -11,6 +13,15 @@ def numberOfDigits(n):
     digits += 1
     n = n//10
   return digits
+
+
+# one liner implementation using math
+def numberOfDigitsMat(n):
+  if(-10 < n < 10):
+    return 1
+  if (n< 0):
+    n = -1 * n
+  return math.floor(math.log10(n) + 1)
 
 
 
@@ -25,4 +36,5 @@ if __name__ == "__main__":
   # One liner 
   # print(len(str(n)))
   print(f"number of digits in {n} = {numberOfDigits(n)}")
+  print(f"Mathmatically: number of digits in {n} = {numberOfDigits(n)}")
 
