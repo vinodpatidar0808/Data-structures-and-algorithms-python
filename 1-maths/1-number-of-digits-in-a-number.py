@@ -46,3 +46,4 @@ if __name__ == "__main__":
   print(f"Mathmatically: number of digits in {n} = {numberOfDigits(n)}")
   print(f"Recursive: number of digits in {n} = {numberOfDigitsRecursive(n)}")
 
+# Time Complexity: O(Number of digits) -> for recursive and iterative, O(1) for logarithmic
